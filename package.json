@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "precompiled-mqtt": "^4.3.14-beta",
     "react": "18.3.1",
     "react-native": "0.77.0"
   },
