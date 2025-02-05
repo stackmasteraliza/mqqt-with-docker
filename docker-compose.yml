@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mubeenMQS
+    ports:
+      - "1883:1883"   
+      - "9005:9005"   
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+    environment:
+      - MQTT_ALLOW_ANONYMOUS=true
+    restart: always
